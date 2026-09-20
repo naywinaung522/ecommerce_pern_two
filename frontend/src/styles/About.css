@@ -1,0 +1,412 @@
+/* frontend/src/styles/About.css */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 32px;
+}
+
+/* Tab Navigation */
+.about-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 12px 30px;
+  border: 2px solid #667eea;
+  background: transparent;
+  color: #667eea;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: #667eea;
+  color: white;
+}
+
+/* About Me Section */
+.about-section {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-avatar {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.about-header h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.about-card {
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-color: #667eea;
+}
+
+.about-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.about-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  background: #667eea;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Updated Social Links with Phone and WhatsApp */
+.social-links-about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: #f0f4ff;
+  border: 1px solid transparent;
+}
+
+.social-link:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(5px);
+  border-color: #667eea;
+}
+
+.social-link:hover .social-icon {
+  color: white;
+}
+
+/* Quick Contact Section */
+.quick-contact {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.quick-contact h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.contact-method:hover {
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.05);
+  border-color: white;
+}
+
+.contact-icon {
+  font-size: 24px;
+}
+
+/* Specific contact method colors on hover */
+.contact-method:nth-child(1):hover {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50;
+}
+
+.contact-method:nth-child(2):hover {
+  background: rgba(37, 211, 102, 0.3);
+  border-color: #25D366;
+}
+
+.contact-method:nth-child(3):hover {
+  background: rgba(255, 87, 34, 0.3);
+  border-color: #FF5722;
+}
+
+.about-story {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #e9ecef;
+}
+
+.about-story h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-story p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-story ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.about-story ul li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Terms & Conditions */
+.terms-section,
+.privacy-section {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.terms-section h2,
+.privacy-section h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.last-updated {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.terms-content,
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.terms-block,
+.privacy-block {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.terms-block h3,
+.privacy-block h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.terms-block p,
+.privacy-block p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.terms-block ul,
+.privacy-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.terms-block ul li,
+.privacy-block ul li {
+  padding: 8px 0;
+  padding-left: 25px;
+  color: #555;
+  line-height: 1.6;
+  position: relative;
+}
+
+.terms-block ul li:before,
+.privacy-block ul li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-left: none;
+}
+
+.contact-info h3 {
+  color: white;
+}
+
+.contact-info p {
+  color: rgba(255,255,255,0.9);
+}
+
+.contact-info strong {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section,
+  .terms-section,
+  .privacy-section {
+    padding: 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .about-header h2 {
+    font-size: 24px;
+  }
+
+  .terms-block,
+  .privacy-block {
+    padding: 15px;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-method {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .quick-contact {
+    padding: 20px;
+  }
+
+  .quick-contact h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-avatar {
+    font-size: 60px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .tech-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+
+  .social-link {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
